@@ -67,6 +67,7 @@ import {
   BadgeCheck,
   Bell,
   BookOpen,
+  Binoculars,
   Bot,
   ChevronRight,
   ChevronsUpDown,
@@ -95,7 +96,7 @@ const data = {
     {
       title: 'Research',
       url: '#',
-      icon: SquareTerminal,
+      icon: Binoculars,
       isActive: true,
     },
     {
