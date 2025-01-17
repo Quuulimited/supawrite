@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { buttonVariants } from '@/lib/registry/new-york/ui/button'
+
 import { cn } from '@/lib/utils'
-import UserAuthForm from './components/UserAuthForm.vue'
+import UserAuthForm from '@/components/UserAuthForm.vue'
 </script>
 
 <template>
@@ -19,10 +19,7 @@ import UserAuthForm from './components/UserAuthForm.vue'
   <div class="container relative hidden h-[800px] flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
     <a
       href="/examples/authentication"
-      :class="cn(
-        buttonVariants({ variant: 'ghost' }),
-        'absolute right-4 top-4 md:right-8 md:top-8',
-      )"
+      
     >
       Login
     </a>
