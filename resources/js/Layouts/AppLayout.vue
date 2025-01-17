@@ -176,7 +176,7 @@ function setActiveTeam(team: typeof data.teams[number]) {
       <SidebarContent>
 
         <SidebarGroup>
-          <SidebarGroupLabel>Features</SidebarGroupLabel>
+          <SidebarGroupLabel>Article writer</SidebarGroupLabel>
           <SidebarMenu>
             <SidebarMenuItem v-for="item in data.navMain" :key="item.name">
               <SidebarMenuButton as-child>
@@ -221,7 +221,7 @@ function setActiveTeam(team: typeof data.teams[number]) {
                     <Avatar class="h-8 w-8 rounded-lg">
                       <AvatarImage :src="$page.props.auth.user.avatar" :alt="$page.props.auth.user.name" />
                       <AvatarFallback class="rounded-lg">
-                        CN
+                        {{ monogram($page.props.auth.user.name) }}
                       </AvatarFallback>
                     </Avatar>
                     <div class="grid flex-1 text-left text-sm leading-tight">
