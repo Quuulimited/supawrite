@@ -81,10 +81,12 @@ import {
   Map,
   MoreHorizontal,
   PieChart,
+  Pencil,
   Plus,
   Settings2,
   Sparkles,
   SquareTerminal,
+  TrendingUp,
   Trash2,
 } from 'lucide-vue-next'
 import { ref } from 'vue'
@@ -102,12 +104,12 @@ const data = {
     {
       title: 'Write',
       url: '#',
-      icon: SquareTerminal,
+      icon: Pencil,
     },
     {
       title: 'Track',
       url: '#',
-      icon: SquareTerminal,
+      icon: TrendingUp,
     }
 
   ],
