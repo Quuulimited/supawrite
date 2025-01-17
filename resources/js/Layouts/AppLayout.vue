@@ -202,6 +202,7 @@ function setActiveTeam(team: typeof data.teams[number]) {
             
           </SidebarMenu>
         </SidebarGroup>
+  
       </SidebarContent>
 
       <SidebarFooter>
