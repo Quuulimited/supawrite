@@ -322,10 +322,10 @@ function setActiveTeam(team: typeof data.teams[number]) {
             <SidebarGroup class="group-data-[collapsible=icon]:hidden">
                 <SidebarGroupLabel>Projects</SidebarGroupLabel>
                 <SidebarMenu>
-                <SidebarMenuItem
-                    v-for="item in data.projects"
-                    :key="item.name"
-                >
+                    <SidebarMenuItem
+                        v-for="item in data.projects"
+                        :key="item.name"
+                    >
                     <SidebarMenuButton as-child>
                     <a :href="item.url">
                         <component :is="item.icon" />
