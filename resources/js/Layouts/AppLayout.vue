@@ -28,6 +28,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/components/ui/collapsible'
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -38,7 +39,9 @@ import {
   DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
+
 import { Separator } from '@/components/ui/separator'
+
 import {
   Sidebar,
   SidebarContent,
@@ -58,6 +61,7 @@ import {
   SidebarRail,
   SidebarTrigger,
 } from '@/components/ui/sidebar'
+
 import {
   AudioWaveform,
   BadgeCheck,

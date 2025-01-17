@@ -4,8 +4,9 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 
 import { cn } from '@/lib/utils'
-
-import { ref } from 'vue'
+import LucideSpinner from 'lucide-vue-next'
+import GitHubLogo from '~icons/radix-icons/github-logo'
+import { ref } from 'radix-icons/vue'
 
 const isLoading = ref(false)
 async function onSubmit(event: Event) {
@@ -37,7 +38,7 @@ async function onSubmit(event: Event) {
           />
         </div>
         <Button :disabled="isLoading">
-
+          <LucideSpinner v-if="isLoading" class="mr-2 h-4 w-4 animate-spin" />
           Sign In with Email
         </Button>
       </div>
@@ -53,7 +54,8 @@ async function onSubmit(event: Event) {
       </div>
     </div>
     <Button variant="outline" type="button" :disabled="isLoading">
-      
+      <LucideSpinner v-if="isLoading" class="mr-2 h-4 w-4 animate-spin" />
+      <GitHubLogo v-else class="mr-2 h-4 w-4" />
       GitHub
     </Button>
   </div>
