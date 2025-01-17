@@ -181,29 +181,7 @@ function setActiveTeam(team: typeof data.teams[number]) {
                   <span>{{ item.title }}</span>
                 </a>
               </SidebarMenuButton>
-              <DropdownMenu>
-                <DropdownMenuTrigger as-child>
-                  <SidebarMenuAction show-on-hover>
-                    <MoreHorizontal />
-                    <span class="sr-only">More</span>
-                  </SidebarMenuAction>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent class="w-48 rounded-lg" side="bottom" align="end">
-                  <DropdownMenuItem>
-                    <Folder class="text-muted-foreground" />
-                    <span>View Project</span>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <Forward class="text-muted-foreground" />
-                    <span>Share Project</span>
-                  </DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem>
-                    <Trash2 class="text-muted-foreground" />
-                    <span>Delete Project</span>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
+       
             </SidebarMenuItem>
 
             
@@ -222,7 +200,7 @@ function setActiveTeam(team: typeof data.teams[number]) {
                   <Avatar class="h-8 w-8 rounded-lg">
                     <AvatarImage :src="$page.props.auth.user.avatar" :alt="$page.props.auth.user.name" />
                     <AvatarFallback class="rounded-lg">
-                      CN
+                      {{ $page.props.auth.user.monogram }}
                     </AvatarFallback>
                   </Avatar>
                   <div class="grid flex-1 text-left text-sm leading-tight">
